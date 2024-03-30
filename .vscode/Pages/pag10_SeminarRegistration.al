@@ -3,6 +3,7 @@ page 50110 "CSD Seminar Registration"
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 6 - Lab 3-1
     //     - Created new page
+    //myapplication
 
     Caption = 'Seminar Registration';
     PageType = Document;
