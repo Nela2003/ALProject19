@@ -259,6 +259,11 @@ table 50110 "CSD Seminar Reg. Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(40;"No. Printed";Integer)
+        {
+          Caption='No. Printed';
+          Editable=false;
+        }
 
     }
 
@@ -323,9 +328,14 @@ table 50110 "CSD Seminar Reg. Header"
           SeminarSetup.GET;
           SeminarSetup.TestField("Seminar Registration Nos.");
           NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.",xRec."No. Series",0D,"No.","No. Series");
+          
         end;
 
       InitRecord();
+      if GetFilter("Seminar No.") <>'' then
+ if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") 
+ then
+ Validate("Seminar No.",GetRangeMin("Seminar No."));
     end;
     local procedure InitRecord();
     begin
