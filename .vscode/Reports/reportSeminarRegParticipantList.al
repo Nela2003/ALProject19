@@ -2,9 +2,9 @@ report 50101 "CSD SeminarRegParticipantList"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    //DefaultRenderingLayout = "./Layouts/SeminarRegParticipantList.rdl";
+    //DefaultRenderingLayout = './Layouts/SeminarRegParticipantList.rdl';
     DefaultLayout=RDLC;
-    RDLCLayout='./Layouts/SeminarRegParticipantList.rdl';
+   RDLCLayout='.vscode\Layouts\SeminarRegParticipantList.rdl';
     Caption='Seminar Reg.-Participant List.';
     
     dataset
