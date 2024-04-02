@@ -40,6 +40,15 @@ page 50110 "CSD Seminar Registration"
                 field("Instructor Name";Rec."Instructor Name")
                 {
                 }
+                ////////////////////////////////////
+                field("Instructor Resource No.";Rec."Instructor Resource No."){
+
+                }
+                //////////////////////////
+                field("Room Resource No.";Rec."Room Resource No.")
+                {
+                    
+                }
                 field("Posting Date";Rec."Posting Date")
                 {
                 }
