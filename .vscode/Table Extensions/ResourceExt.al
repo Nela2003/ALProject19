@@ -13,11 +13,11 @@ tableextension 50100  "CSD ResourceExt" extends Resource
  {
  OptionCaption = 'Instructor,Room';
  }
- field(50101;"CSD Resource Type";Option)
+ field(50101;"CSD Resource Type";Enum "Resource Type")
  {
  Caption = 'Resource Type';
- OptionMembers = "Internal","External";
- OptionCaption = 'Internal,External';
+//  OptionMembers = "Internal","External";
+//  OptionCaption = 'Internal,External';
  }
  field(50102;"CSD Maximum Participants";Integer)
  {
