@@ -90,12 +90,12 @@ table 50132 "CSD Seminar Ledger Entry"
         field(17;"Room Resource No.";Code[20])
         {
             Caption = 'Room Resource No.';
-            TableRelation = Resource where (Type=const(Machine));
+            TableRelation = Resource where (Type=const(Room));
         }
         field(18;"Instructor Resource No.";Code[20])
         {
             Caption = 'Instructor Resource No.';
-            TableRelation = Resource where (Type=const(Person));
+            TableRelation = Resource where (Type=const(Instructor));
         }
         field(19;"Starting Date";Date)
         {

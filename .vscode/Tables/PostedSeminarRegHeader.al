@@ -30,24 +30,26 @@ table 50118 "CSD Posted Seminar Reg Header"
         }
         field(5; "Instructor Code"; Code[10])
         {
-            TableRelation = Resource where(Type = const(Person));
+           // TableRelation = Resource where(Type = const(Instructor));
 
 
         }
         field(6; "Instructor Name"; Text[50])
         {
             CalcFormula = Lookup(Resource."Name" where("No."=Field("Instructor Resource No."),
-                                                      Type=const(Person)));
+                                                      Type=const(Instructor)));
             Editable = false;
             FieldClass = FlowField;
         }
         field(31;"Instructor Resource No."; Code[20])
         {
             DataClassification = ToBeClassified;
+             TableRelation = Resource where(Type = const(Instructor));
         }
         field(32;"Room Resource No."; Code[20])
         {
             DataClassification = ToBeClassified;
+             TableRelation = Resource where (Type=const(Room));
         }
         field(7;Status;Option)
         {
@@ -66,7 +68,7 @@ table 50118 "CSD Posted Seminar Reg Header"
         }
         field(11;"Room Code";Code[10])
         {
-            TableRelation = Resource where (Type=const(Machine));
+            //TableRelation = Resource where (Type=const(Room));
 
            
         }

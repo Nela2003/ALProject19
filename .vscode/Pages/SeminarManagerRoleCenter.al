@@ -50,7 +50,7 @@ page 50142 "CSD Seminar Manager RoleCenter"
  {
  Caption = 'Instructors';
  RunObject = Page "Resource List";
- RunPageView = WHERE(Type = const(Person));
+ RunPageView = WHERE(Type = const(Instructor));
  ToolTip = 'View all resources registeres as persons';
  }
 
@@ -58,7 +58,7 @@ action(Rooms)
  {
  Caption = 'Instructors';
  RunObject = Page "Resource List";
- RunPageView = WHERE(Type = const(Machine));
+ RunPageView = WHERE(Type = const(Room));
  ToolTip = 'View all resources registeres as machines';
  }
  action("Sales Invoices")

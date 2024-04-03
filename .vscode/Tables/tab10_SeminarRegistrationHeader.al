@@ -64,7 +64,7 @@ table 50110 "CSD Seminar Reg. Header"
         }
          field(31; "Instructor Resource No."; Code[20])
         {
-            TableRelation = Resource where (Type = const (Person));
+            TableRelation = Resource where (Type = const (Instructor));
 
             trigger OnValidate();
             begin
@@ -74,7 +74,7 @@ table 50110 "CSD Seminar Reg. Header"
         
         field(6; "Instructor Name"; Text[50])
         {
-            CalcFormula = Lookup (Resource."Name" where ("No."=Field("Instructor Resource No."),Type=const("Person")));
+            CalcFormula = Lookup (Resource."Name" where ("No."=Field("Instructor Resource No."),Type=const("Instructor")));
             Editable = false;
             FieldClass = FlowField;
         }
@@ -96,7 +96,7 @@ table 50110 "CSD Seminar Reg. Header"
         }
         field(11;"Room  Resource No.";Code[10])
         {
-            TableRelation = Resource where (Type=const(Machine));
+            TableRelation = Resource where (Type=const(Room));
 
             trigger OnValidate();
             begin
