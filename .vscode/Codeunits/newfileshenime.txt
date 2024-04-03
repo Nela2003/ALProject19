@@ -1,0 +1,9 @@
+resource extension 
+value 
+ndryshim ne vl const 
+fshi nga header room resource no dhe instructor resource no 
+ resource name 
+ postimi duhet te fshihet faqja me curr page .update delete
+ raporti nr i seminarit dhe te dhenat 
+ navigate vlerat e lidhura me postim 
+ 

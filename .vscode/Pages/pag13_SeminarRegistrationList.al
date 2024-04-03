@@ -38,7 +38,7 @@ page 50113 "CSD Seminar Registration List"
                 field("Maximum Participants";Rec."Maximum Participants")
                 {
                 }
-                field("Room Code";Rec."Room Code")
+                field("Room  Resource No.";Rec."Room  Resource No.")
                 {
                 }
             }

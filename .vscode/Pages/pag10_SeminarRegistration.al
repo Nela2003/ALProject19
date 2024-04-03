@@ -34,21 +34,21 @@ page 50110 "CSD Seminar Registration"
                 field("Seminar Name";Rec."Seminar Name")
                 {
                 }
-                field("Instructor Code";Rec."Instructor Code")
+                field("Instructor Resource No.";Rec."Instructor Resource No.")
                 {
                 }
                 field("Instructor Name";Rec."Instructor Name")
                 {
                 }
-                ////////////////////////////////////
-                field("Instructor Resource No.";Rec."Instructor Resource No."){
+                // ////////////////////////////////////
+                // field("Instructor Resource No.";Rec."Instructor Resource No."){
 
-                }
-                //////////////////////////
-                field("Room Resource No.";Rec."Room Resource No.")
-                {
+                // }
+                // //////////////////////////
+                // field("Room Resource No.";Rec."Room Resource No.")
+                // {
                     
-                }
+                // }
                 field("Posting Date";Rec."Posting Date")
                 {
                 }
@@ -74,7 +74,7 @@ page 50110 "CSD Seminar Registration"
             }
             group("Seminar Room")
             {
-                field("Room Code";Rec."Room Code")
+                field("Room Resource No.";Rec."Room Resource No.")
                 {
                 }
                 field("Room Name";Rec."Room Name")

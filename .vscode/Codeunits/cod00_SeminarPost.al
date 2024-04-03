@@ -78,12 +78,18 @@ codeunit 50100 "CSD Seminar-Post"
  // Post seminar room to seminar ledger 
  PostSeminarJnlLine(1); // Room
 Delete(true);
+SeminarRegLine.Deleteall();
+SeminarRegHeader.deleteall();
+CurrPAge.Update(true);
+CurrPage.Close();
+Page.Run(Page::"CSD Seminar List");
  
  end;
  Rec := SeminarRegHeader; 
     end;
 
     var
+       CurrPAge:Page "CSD Seminar Registration";
         SeminarRegHeader : Record "CSD Seminar Reg. Header";
         SeminarRegLine : Record "CSD Seminar Registration Line";
         PstdSeminarRegHeader : Record "CSD Posted Seminar Reg Header";
