@@ -273,6 +273,7 @@ SeminarJnlLine."Participant Contact No." :=
  if SeminarCharge.FindSet(false,false) then repeat
  PostSeminarJnlLine(3); // Charge 
  until SeminarCharge.next = 0;
+ SeminarCharge.DeleteAll();
     end;
 
 

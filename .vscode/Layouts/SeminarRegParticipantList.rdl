@@ -541,21 +541,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Room_Name">
+                        <Textbox Name="Instructor_Name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Room_Name.Value</Value>
+                                  <Value>=Fields!Instructor_Name.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Room_Name</rd:DefaultName>
+                          <rd:DefaultName>Instructor_Name</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -662,6 +662,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -929,7 +930,7 @@
             <Top>1.33in</Top>
             <Left>0.16333in</Left>
             <Height>2.25in</Height>
-            <Width>4.00833in</Width>
+            <Width>4.00834in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

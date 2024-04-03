@@ -1,9 +1,8 @@
-resource extension 
-value 
+resource extension //mbaruar
+value //mbaruar
 ndryshim ne vl const 
 fshi nga header room resource no dhe instructor resource no 
- resource name 
- postimi duhet te fshihet faqja me curr page .update delete
- raporti nr i seminarit dhe te dhenat 
+ resource name //mbaruar
+ postimi duhet te fshihet faqja me curr page .update delete//mbaruar 
+ raporti nr i seminarit dhe te dhenat //mbaruar
  navigate vlerat e lidhura me postim 
- 
